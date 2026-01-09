@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "Tab Groups Organizer",
+    "version": "0.1.0",
+    "description": "整理 Chrome 标签组与标签页，支持活跃与本地回收站视图。",
+    "action": {
+        "default_title": "Tab Groups Organizer"
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": [
+        "tabGroups",
+        "tabs",
+        "windows",
+        "sessions",
+        "storage"
+    ],
+    "host_permissions": [
+        "<all_urls>"
+    ]
+}
